@@ -1,4 +1,4 @@
-DOCKER_NAMESPACE =	armbuild/
+DOCKER_NAMESPACE =	onli/
 NAME =			scw-app-serendipity
 VERSION =		latest
 VERSION_ALIASES =	14.04 lts trusty 2.0.1

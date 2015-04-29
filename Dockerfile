@@ -1,4 +1,4 @@
-## -*- docker-image-name: "armbuild/scw-app-serendipity:latest" -*-
+## -*- docker-image-name: "onli/scw-app-serendipity:latest" -*-
 FROM armbuild/scw-distrib-ubuntu:lts
 MAINTAINER onli <onli@paskuda.biz> (@onliandone)
 
