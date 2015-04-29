@@ -1,6 +1,6 @@
-## -*- docker-image-name: "armbuild/ocs-app-serendipity:trusty" -*-
-FROM armbuild/ocs-distrib-ubuntu:lts
-MAINTAINER Online Labs <opensource@ocs.online.net> (@online_en)
+## -*- docker-image-name: "armbuild/scw-app-serendipity:latest" -*-
+FROM armbuild/scw-distrib-ubuntu:lts
+MAINTAINER onli <onli@paskuda.biz> (@onliandone)
 
 
 # Prepare rootfs for image-builder
@@ -8,7 +8,7 @@ RUN /usr/local/sbin/builder-enter
 
 # Install packages
 RUN apt-get -q update &&  \
-    apt-get -q upgrade && \
+    apt-get -y -q upgrade && \
     apt-get install -y -q \
 	php5              \
 	php5-sqlite       \
