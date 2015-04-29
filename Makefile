@@ -1,7 +1,7 @@
 DOCKER_NAMESPACE =	armbuild/
 NAME =			ocs-app-serendipity
 VERSION =		latest
-VERSION_ALIASES =	14.04 lts latest
+VERSION_ALIASES =	14.04 lts trusty
 TITLE =			Serendipity
 DESCRIPTION =		Serendipity with SQLite
 SOURCE_URL =		https://github.com/onli/image-app-serendipity
