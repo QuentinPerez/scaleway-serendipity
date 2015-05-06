@@ -6,6 +6,7 @@ MAINTAINER onli <onli@paskuda.biz> (@onliandone)
 # Prepare rootfs for image-builder
 RUN /usr/local/sbin/builder-enter
 
+
 # Install packages
 RUN apt-get -q update &&  \
     apt-get -y -q upgrade && \
@@ -24,11 +25,10 @@ RUN wget -O serendipity.zip http://sourceforge.net/projects/php-blog/files/lates
     mv serendipity /var/www/html && \
     rm -f serendipity.zip
 
+
 # Patch rootfs
-# - Add ocs-scripts
-# - Tweaks rootfs so it matches Online Labs infrastructure
-# RUN curl https://raw.githubusercontent.com/online-labs/ocs-scripts/master/upgrade_root.bash | bash
 ADD ./patches/etc/ /etc/
+
 
 # Clean rootfs from image-builder
 RUN /usr/local/sbin/builder-leave

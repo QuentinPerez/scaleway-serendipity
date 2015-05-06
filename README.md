@@ -1,11 +1,11 @@
-Serendipity image on Online Labs
-================================
+# Serendipity image on Scaleway
 
-Based on the official WordPress image on Online Labs.
+Scripts to build the Serendipity image on Scaleway (based on the [official WordPress image](https://github.com/scaleway/image-app-wordpress))
 
-Scripts to build the Serendipity image on Online Labs.
+This image is built using [Image Tools](https://github.com/scaleway/image-tools) and depends on the official [Ubuntu](https://github.com/scaleway/image-ubuntu) image.
 
-This image is built using [Image Tools](https://github.com/online-labs/image-tools) and depends on the official [Ubuntu](https://github.com/online-labs/image-ubuntu) image.
+![](https://avatars2.githubusercontent.com/u/1104713?v=3&s=300)
+
 
 ---
 
@@ -13,15 +13,15 @@ This image is built using [Image Tools](https://github.com/online-labs/image-too
 
 We use the Docker's building system and convert it at the end to a disk image that will boot on real servers without Docker. Note that the image is still runnable as a Docker container for debug or for inheritance.
 
-[More info](https://github.com/online-labs/image-tools#docker-based-builder)
+[More info](https://github.com/scaleway/image-tools)
+
 
 ---
 
-Install
--------
+## Install
 
-Build and write the image to /dev/nbd1 (see [documentation](https://doc.cloud.online.net/howto/create_image.html))
+Build and write the image to /dev/nbd1 (see [documentation](https://www.scaleway.com/docs/create_an_image_with_docker))
 
     $ make install
 
-Full list of commands available at: [online-labs/image-tools](https://github.com/online-labs/image-tools/tree/master#commands)
+Full list of commands available at: [scaleway/image-tools](https://github.com/scaleway/image-tools/#commands)
