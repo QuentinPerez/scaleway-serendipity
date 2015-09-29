@@ -4,7 +4,7 @@ cat <<EOF
 
 Serendipity $(grep versionInstalled /var/www/html/serendipity_config_local.inc.php | sed 's#.*'\''\(.*\)'\'';#\1#') is installed in /var/www/html.
 
-To continue the installation, open http://$(/usr/local/bin/oc-metadata PUBLIC_IP_ADDRESS)/ in your browser.
+To continue the installation, open http://$(/usr/local/bin/oc-metadata --cached PUBLIC_IP_ADDRESS)/ in your browser.
 
 Serendipity will detect SQLite as database, no settings must be changed.
 
