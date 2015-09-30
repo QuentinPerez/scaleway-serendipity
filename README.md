@@ -3,7 +3,7 @@
 [![Scaleway ImageHub](https://img.shields.io/badge/ImageHub-view-ff69b4.svg)](https://hub.scaleway.com/serendipity.html)
 [![Run on Scaleway](https://img.shields.io/badge/Scaleway-run-69b4ff.svg)](http://cloud.scaleway.com/#/servers/new?image=39459634-e450-42b6-a352-5aabcaca396f)
 
-Scripts to build the Serendipity image on Scaleway (based on the [official WordPress image](https://github.com/scaleway/image-app-wordpress))
+Scripts to build the Serendipity image on Scaleway (based on the [official Ubuntu image](https://github.com/scaleway/image-ubuntu))
 
 This image is built using [Image Tools](https://github.com/scaleway/image-tools) and depends on the official [Ubuntu](https://github.com/scaleway/image-ubuntu) image.
 
